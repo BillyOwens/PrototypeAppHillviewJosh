@@ -35,8 +35,8 @@ var page4ListCounter = 0;
 <!----Beginning of page one ------>
 
 <div data-role="page" id="page" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
-    data-theme="c">
-	<div data-role="header">
+    data-theme="">
+	<div data-role="header">			<!-- this data theme will do whole page only needed once -->
 		
 		
 		
@@ -56,9 +56,12 @@ var page4ListCounter = 0;
 	<div data-role="content">
 		
 		 
-		 <div>
-	<p id="testDate">Click the button below to display the current date and time</p>
-	<button type="button"  onclick="displayDate()">Display Date/Time</button>
+		 <div data-theme="c">
+		 	<p id="testDate">Click the button below to display the current date and time</p>
+			
+	
+	<button type="button"  onclick="displayDate()">Display Date/Time
+		</button>
 	</div>
 	
 		<!--<p><img src="images/vdv.jpg" width"240" height"180"  align="centre" style="position:relative; top:50%; left:15%; margin-left: -18px; margin-top: -18px"></p></h1>
@@ -85,7 +88,7 @@ var page4ListCounter = 0;
 
 <!--------------------------- PUT IN YOUR EMAIL BELOW ------------------------------------>
 
-<a href="mailto:myName@gmail.com" class="ui-btn-left ui-btn ui-btn-corner-all ui-shadow 
+<a href="mailto:info@n3xtg3nov8ion.com" class="ui-btn-left ui-btn ui-btn-corner-all ui-shadow 
 ui-btn-up-a" data-theme="b"> Contact Us </a>
 </br>
 
@@ -111,8 +114,10 @@ id="b" target="_blank" data-theme="a">
 -->
 
 <!--  CHANGE THE NAME AT BOTTOM OF PAGE HERE ------------------------------------------------>
+
 </div>
-<div>
+<div data-theme="i">
+	
 <h4><p>&copy; N3xt G3nov8ion</p></h4>
 	</div>
 	
@@ -121,6 +126,8 @@ id="b" target="_blank" data-theme="a">
 <!---------------------beginning of navbar / CHANGE THE WORDS IN WHITE TO APPEAR ON BUTTONS -->
 		
 		<div data-role="footer" data-position="fixed" data-id="footer" data-theme="e">
+			
+			
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#page2" data-role="button" data-icon="arrow-r">AboutSkrillex | Josh Weller</a></li>
@@ -143,7 +150,7 @@ id="b" target="_blank" data-theme="a">
 	
 	
 	
-	<div data-role="header" id="page2Header" data-theme="e">
+	<div data-role="header" id="page2Header" data-theme="a">
 		<h1>Skrillex | Josh Weller</h1>
 		<a href="#page" data-icon="home" data-iconpos="notext">Home</a>
 	</div>
@@ -157,7 +164,7 @@ id="b" target="_blank" data-theme="a">
 	
 		<div class="ui-grid-a" id="contact_infos" align="center" id="testingAjax1">
           	
-          	<a id="testingAjax1" data-role="button" data-theme="b" data-collapsed="true"  onclick="text1()">Skrillex </a>
+          	<a id="testingAjax1" data-role="button" data-theme="g" data-collapsed="true"  onclick="text1()">Skrillex</a>
           </div>
     
     <!--      	
@@ -180,8 +187,8 @@ id="b" target="_blank" data-theme="a">
 	<div data-role="footer" data-position="fixed" data-id="MarkBillfooter" data-theme="b">
 		<!--beginning of navbar--><div data-role="navbar">
 			<ul>
-				<li><a href="#" data-role="button" data-icon="arrow-r">Skrillex | Josh Weller</a></li>
-				<li><a href="#page3" data-role="button" data-icon="arrow-r">Electronic Music</a></li>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">AboutSkrillex | Josh Weller</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">ELectronic Music</a></li>
 				<li><a href="#page4" data-role="button" data-icon="arrow-r">Bed Intruder | Ebola</a></li>
 				<li><a href="#page5" data-role="button" data-icon="arrow-r">Gallery/YouTube Video/Flicker</a></li>
 				<li><a href="#page6" data-role="button" data-icon="arrow-r">Location</a></li>
@@ -194,7 +201,7 @@ id="b" target="_blank" data-theme="a">
 
 <div data-role="page" id="page3" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
     data-theme="e">
-	<div data-role="header" id="page3Header" data-theme="e">
+	<div data-role="header" id="page3Header" data-theme="a">
 		<h1>Electronic Music</h1>
 		<a href="#page" data-icon="home" data-iconpos="notext">Home</a>
 	</div>
@@ -212,13 +219,10 @@ id="b" target="_blank" data-theme="a">
           	<h3>Electronic Music</h3>
           	<p><img src="images/foto3.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
             	
-          	<a id="testingAjax3" data-role="button" data-theme="b" data-collapsed="true"  onclick="text3()">Electronic Music </a>
+          	<a id="testingAjax3" data-role="button" data-theme="b" data-collapsed="true"  onclick="text3()">Girl Science</a>
           </div>
           
-        <!--  <div align="center">
-            	<iframe width="560" height="315" src="https://www.youtube.com/embed/Ih6ApEBmHic" frameborder="0" allowfullscreen></iframe>
-			</div>
-		-->
+         
             		
 	<div>
 		<h4><p>&copy; N3xt G3nov8ion 2013</p></h4>
@@ -228,8 +232,8 @@ id="b" target="_blank" data-theme="a">
 	<div data-role="footer" data-position="fixed" data-id="" data-theme="b">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#page2" data-role="button" data-icon="arrow-r">Skrillex | Josh Weller</a></li>
-				<li><a href="#" data-role="button" data-icon="arrow-r">Electronic Music</a></li>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">AboutSkrillex | Josh Weller</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">ELectronic Music</a></li>
 				<li><a href="#page4" data-role="button" data-icon="arrow-r">Bed Intruder | Ebola</a></li>
 				<li><a href="#page5" data-role="button" data-icon="arrow-r">Gallery/YouTube Video/Flicker</a></li>
 				<li><a href="#page6" data-role="button" data-icon="arrow-r">Location</a></li>
@@ -243,7 +247,7 @@ id="b" target="_blank" data-theme="a">
 
 <div data-role="page" id="page4" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
     data-theme="e">
-	<div data-role="header">
+	<div data-role="header" data-theme="a">
 		<h1>Bed Intruder</h1>
 		<a href="#page" data-icon="home" data-iconpos="notext">Home</a>
 	</div>
@@ -271,11 +275,11 @@ id="b" target="_blank" data-theme="a">
          
 	
 	<div class="ui-grid-a" id="contact_infos" align="center" id="testingAjax3">
-          	<h3>Winning Grounds</h3>
+          	<h3>Atomic Bomb</h3>
           	
           	<p><img src="images/foto5.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
 		
-          	<a id="testingAjax5" data-role="button" data-theme="b" data-collapsed="true"  onclick="text5()">Ebola </a>
+          	<a id="testingAjax5" data-role="button" data-theme="b" data-collapsed="true"  onclick="text5()">Nuclear Bomb</a>
           </div>
 	
 	<div>
@@ -324,9 +328,9 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/webbdevv.json?count=
 	<div data-role="footer" data-position="fixed" data-id="" data-theme="b">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#page2" data-role="button" data-icon="arrow-r">Skrillex | Josh Weller</a></li>
-				<li><a href="#page3" data-role="button" data-icon="arrow-r">Electronic Music</a></li>
-				<li><a href="#" data-role="button" data-icon="arrow-r">Bed Intruder | Ebola</a></li>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">AboutSkrillex | Josh Weller</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">ELectronic Music</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">Bed Intruder | Ebola</a></li>
 				<li><a href="#page5" data-role="button" data-icon="arrow-r">Gallery/YouTube Video/Flicker</a></li>
 				<li><a href="#page6" data-role="button" data-icon="arrow-r">Location</a></li>
 			</ul><!--end of list for navbar-->
@@ -351,7 +355,7 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/webbdevv.json?count=
 	</div>
 
 	<div data-role="content" data-theme="b">	
-    <a id="page5Text"><p>Click for Images </p></a>
+    <a id="page5Text"><p>Click for selection of Scientific Images </p></a>
 	<a id="page5AJAXButton" data-role="button" data-icon="plus" data-theme="b">Get Data</a>
        	<ul data-role="listview" id="page5ImageList">
         </ul>	
@@ -376,14 +380,6 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/webbdevv.json?count=
 			</iframe>
   					-->
    
-		
-		<audio width="270" controls onclick="">
-  			<source src="audio/01 Bruno Mars - Locked Out of Heaven.mp3" type="audio/mpeg">
-  		</audio>
-  		
-  		<audio width="270" controls onclick="">
-  		<source src="audio/ 12 Ed Sheeran - Lego House.mp3" type="audio/mpeg">
-  			</audio>
   			<!--
   			<audio controls>
   			<source src="audio/04 Imagine Dragons - Radioactive.mp3" type="audio/mpeg">
@@ -405,10 +401,10 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/webbdevv.json?count=
 	<div data-role="footer" data-position="fixed" data-id="" data-theme="b">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#page2" data-role="button" data-icon="arrow-r">Skrillex | Josh Weller</a></li>
-				<li><a href="#page3" data-role="button" data-icon="arrow-r">Electronic Music</a></li>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">AboutSkrillex | Josh Weller</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">ELectronic Music</a></li>
 				<li><a href="#page4" data-role="button" data-icon="arrow-r">Bed Intruder | Ebola</a></li>
-				<li><a href="#" data-role="button" data-icon="arrow-r">Gallery/YouTube Video/Flicker</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Gallery/YouTube Video/Flicker</a></li>
 				<li><a href="#page6" data-role="button" data-icon="arrow-r">Location</a></li>
 			</ul><!--end of list for navbar-->
 			</div><!--end of navbar-->
@@ -431,7 +427,7 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/webbdevv.json?count=
 	
 	
 	
-	<div data-role="header" data-theme="e">
+	<div data-role="header" data-theme="a">
 		<h1>Location</h1>
 		
 		<a href="#page" data-icon="home" data-iconpos="notext">home</a>
@@ -454,7 +450,8 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/webbdevv.json?count=
           </div>
 		
 		<div align="center">
-			
+			<iframe width="80%" height="200" src="https://www.youtube.com/embed/TVrPv4Qhouw" frameborder="0" allowfullscreen></iframe>
+
 			<h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.355142671333!2d-6.
 				260103999999997!3d53.283173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670bd99d423ba
 				5%3A0xade0713a270f2ef8!2sHillview+Community+Resource+Centre!5e0!3m2!1sen!2sie!4v1432056166960" 
@@ -486,14 +483,14 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/webbdevv.json?count=
 	
 	
 	
-	<div data-role="footer" data-position="fixed" data-id="" data-theme="e">
+	<div data-role="footer" data-position="fixed" data-id="" data-theme="b">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#page2" data-role="button" data-icon="arrow-r">Skrillex | Josh Weller</a></li>
-				<li><a href="#page3" data-role="button" data-icon="arrow-r">Electronic Music</a></li>
-				<li><a href="#page4" data-role="button" data-icon="arrow-r">Stadium</a></li>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">AboutSkrillex | Josh Weller</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">ELectronic Music</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">Bed Intruder | Ebola</a></li>
 				<li><a href="#page5" data-role="button" data-icon="arrow-r">Gallery/YouTube Video/Flicker</a></li>
-				<li><a href="#" data-role="button" data-icon="arrow-r">Location</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Location</a></li>
 				
 				
 				
